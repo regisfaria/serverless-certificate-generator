@@ -1,7 +1,7 @@
-export const test = async event => {
+export const handle = async event => {
   return {
     statusCode: 200,
-    message: 'Hello World',
+    body: JSON.stringify({ message: 'Hello World' }),
     headers: {
       'Content-Type': 'application/json',
     },
