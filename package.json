@@ -4,11 +4,17 @@
   "description": "Serverless certification generator",
   "scripts": {
     "dev": "serverless offline",
-    "deploy": "sls deploy -v"
+    "deploy": "sls deploy -v",
+    "dynamo": "sls dynamodb start"
   },
   "dependencies": {
     "@middy/core": "^1.5.2",
     "@middy/http-json-body-parser": "^1.5.2",
+    "aws-sdk": "^2.912.0",
+    "chrome-aws-lambda": "^9.1.0",
+    "dayjs": "^1.10.4",
+    "dotenv": "^10.0.0",
+    "handlebars": "^4.7.7",
     "source-map-support": "^0.5.19"
   },
   "devDependencies": {
@@ -37,5 +43,6 @@
     "typescript": "^4.1.3",
     "webpack": "^5.20.2",
     "webpack-node-externals": "^2.5.2"
-  }
+  },
+  "license": "MIT"
 }
